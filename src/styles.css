@@ -1,0 +1,299 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+    margin: 0 0 2rem 0;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+span {
+    color: #037bc0;
+}
+
+.linea{
+    border-top: 0.1rem solid #e1e1e1;
+}
+
+
+
+header {
+    margin-top: 5rem;
+}
+
+
+
+.categorias{
+    margin-top: 5rem;
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.listado-categorias a{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.listado-categorias a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.sobre-nosotros{
+    margin-top: 5rem;
+}
+
+.sobre-nosotros-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+}
+
+.texto-nosotros{
+    padding: 10rem;
+    text-align: center;
+    color: #fff;
+    background-color: #037bc0;
+    height: 45.1rem;
+}
+
+
+
+.contenido-principal{
+    margin-top: 5rem;
+}
+
+.listado-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    margin: 0;
+}
+
+.producto{
+    background-color: rgb(6, 2, 82);
+    color: #fff;
+}
+
+.texto-producto{
+    padding: 2rem;
+}
+
+.producto p{
+    text-align: justify;
+    
+}
+
+.precio{
+    text-align: center!important;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.boton{
+    background:rgb(6, 2, 82);
+    display: block;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    border: none;
+}
+
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+
+}
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.producto:nth-child(1) img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height: 43rem;
+    object-fit: cover;
+}
+
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(2) img,
+.producto:nth-child(3) img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.menu-footer a{
+    display: block;
+    text-align: left;
+}
+
+.copyrigth{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.principal {
+    margin-top: 5rem;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.item img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.entradas {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.fecha-autor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.entrada {
+    border-bottom: .2rem solid #e1e1e1;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+
+.entrada:last-of-type {
+    border-bottom: none; 
+}
+
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: 2px solid #000;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: #005485;
+    color: #fff;
+    width: 100%;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
